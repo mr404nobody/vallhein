@@ -1,0 +1,68 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 20px;
+    border: solid 1px black;
+    border-radius: 30px;
+    max-width: 100%;
+}
+
+#texto, #add-btn {
+    padding: 8px;
+    border-radius: 20px;
+}
+
+#add-btn {
+    cursor: pointer;
+}
+.lista-tarefas ul {
+    font-size: 1.2em;
+    list-style: none;
+    max-width: 500px;
+    overflow-wrap: break-word;
+    word-break: break-all;
+}
+
+.lista-tarefas ul li {
+    margin-top: 15px;
+    text-decoration: dashed;
+    padding: 8px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: lightslategray;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lista-tarefas ul li button {
+    background-color: lightcoral;
+    padding: 4px 8px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+p {
+    display: none;
+    color: red;
+
+}
