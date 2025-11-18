@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    background-color: whitesmoke;
+    min-height: 100vh;
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista-tarefas {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 50%;
+    max-width: 90%;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.lista-tarefas h1 {
+    text-align: center;
+}
+
+.lista-tarefas .caixa {
+    display: flex;
+    gap: 10px;
+}
+
+.lista-tarefas .caixa input {
+    border-radius: 3px;
+    padding: 5px;
+    flex: auto;
+}
+
+.lista-tarefas .caixa button{
+    border: none;
+    padding: 7px;
+    border-radius: 3px;
+    color: white;
+    background-color: darkblue;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.lista-tarefas .lista ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 100%;
+}
+
+.tarefa-feita {
+    text-decoration: line-through;
+}
+
+.lista-tarefas .lista ul li {
+    background-color: whitesmoke;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    word-break: break-all;
+}
+
+.feito {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.excluir {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#aviso {
+    display: none;
+    color: red;
+}
