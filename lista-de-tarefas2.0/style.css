@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    transition: 0.2s;
 }
 
 .container {
@@ -40,16 +41,19 @@
     border-radius: 3px;
     padding: 5px;
     flex: auto;
+    border: 2px solid rgba(0, 0, 139, 0.5);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 .lista-tarefas .caixa button{
-    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 7px;
     border-radius: 3px;
     color: white;
     background-color: darkblue;
     font-weight: bold;
     cursor: pointer;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 .lista-tarefas .lista ul {
@@ -71,6 +75,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 3px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
     word-break: break-all;
@@ -98,4 +103,38 @@
 #aviso {
     display: none;
     color: red;
+}
+
+#tema {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    background-color: whitesmoke;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tema-escuro {
+    background-color: rgb(56, 56, 56);
+    
+    h1 {
+        color: white;
+    }
+
+    #tema {
+    border: 1px solid rgba(245, 245, 245, 0.1);
+    padding: 7px;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-weight: bold;
+    }
+
+    transition: 0.2s;
+}
+
+.fundo-escuro {
+    background-color: rgb(27, 27, 27);
+    transition: 0.2s;
 }
